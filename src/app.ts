@@ -81,13 +81,13 @@ for (const game in data.actual) {
 
 console.log(weekTable.toString());
 
-const sortedPoints = Array.from(points.leagueTable.entries()).sort((a: any, b: any) => {
-    return a[1] - b[1];
+const sortedPoints = points.leagueTable.sort((a: any, b: any) => {
+    return b.points - a.points;
 });
 
 const leagueTable = new Table({head: ["Pos", "Name", "Week points", "Total points"], colAligns: ["left", "left", "right", "right"]});
 for (const pos in sortedPoints) {
-    const row = sortedPoints[pos][1];
+    const row = sortedPoints[pos];
     const weekPoints = Object.values(points.gamePoints[row["name"]]).reduce((a,b) => a + b, 0);
     const posNo = parseInt(pos)+1;
     leagueTable.push([posNo, row["name"], `${weekPoints}`, row["points"]]);
