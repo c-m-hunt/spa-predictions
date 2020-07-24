@@ -1,3 +1,4 @@
+import Table from "cli-table";
 import { data, PredictionData, ActualScore, PredictedScore } from "./data";
 
 type Result = "H" | "D" | "A"
@@ -28,7 +29,7 @@ const calculateGamePoints = (prediction: PredictedScore, actual: ActualScore): n
     if (predictedResult === actualResult) {
         points += 2;
     }
-    if (prediction.homeGoals === actual.homeGoals && prediction.homeGoals === actual.awayGoals) {
+    if (prediction.homeGoals === actual.homeGoals && prediction.awayGoals === actual.awayGoals) {
         points += 4;
     }
     if (actual.scorers.includes(prediction.scorer)) {
@@ -69,26 +70,26 @@ const calculateTable = (data: PredictionData) => {
     };
 };
 
-
 const points = calculateTable(data);
 
-for (const player in points.gamePoints) {
-    console.log("-------------");
-    console.log(player);
-    console.log("-------------");
-    for (const game in points.gamePoints[player]) {
-        console.log(`${game} - ${points.gamePoints[player][game]}`);
-    }
-    console.log("-------------");
-    console.log("             ");
+const weekTable = new Table({head: ["Game", ...Object.keys(points.gamePoints)], colAligns: ["left", ...new Array(Object.keys(points.gamePoints).length).fill("right") ]});
+console.log(weekTable);
+for (const game in data.actual) {
+    const playerPoints = Object.values(points.gamePoints).map(p => p[game]);
+    weekTable.push([game, ...playerPoints]);
 }
 
+console.log(weekTable.toString());
 
 const sortedPoints = Array.from(points.leagueTable.entries()).sort((a: any, b: any) => {
     return a[1] - b[1];
 });
 
+const leagueTable = new Table({head: ["Pos", "Name", "Week points", "Total points"], colAligns: ["left", "left", "right", "right"]});
 for (const pos in sortedPoints) {
     const row = sortedPoints[pos][1];
-    console.log(`${parseInt(pos)+1} ${row["name"]} ${row["points"]}`);
+    const weekPoints = Object.values(points.gamePoints[row["name"]]).reduce((a,b) => a + b, 0);
+    const posNo = parseInt(pos)+1;
+    leagueTable.push([posNo, row["name"], `${weekPoints}`, row["points"]]);
 }
+console.log(leagueTable.toString());
