@@ -91,13 +91,15 @@ const displayWeeklyGamePoints = (
   predictionData: PredictionData
 ) => {
   const weekTable = new AsciiTable("Weekly Table");
-  weekTable.setHeading("Game", ...Object.keys(gamePoints));
+  weekTable.setHeading("Game", "Current score", ...Object.keys(gamePoints));
   for (const game of games) {
     const playerPoints = Object.values(gamePoints).map((p: {[key: string]: number}, i: number) => {
       const pred = predictionData.predictions[i].predictions[game]
       return `${pred.homeGoals}-${pred.awayGoals} ${pred.scorer} - ${p[game]}`;
     });
-    weekTable.addRow(game, ...playerPoints);
+    const actualGame = predictionData.actual[game];
+    const actualGameString = `${actualGame.homeGoals}-${actualGame.awayGoals} ${actualGame.scorers.join(",")}`
+    weekTable.addRow(game, actualGameString, ...playerPoints);
   }
   console.log(weekTable.toString());
 };
@@ -151,7 +153,7 @@ showUpdatedData();
 
 const watcher = Deno.watchFs("./data.json");
 for await (const event of watcher) {
-  if (event.kind === "access") {
+  if (event.kind === "modify") {
     const now = new Date();
     const formattedTime = `${appendLeadingZeroes(now.getHours())}:${
       appendLeadingZeroes(now.getMinutes())
