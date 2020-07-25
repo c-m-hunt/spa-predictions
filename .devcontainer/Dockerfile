@@ -13,3 +13,10 @@ FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0-14
 #     && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
+RUN curl -fsSL https://deno.land/x/install/install.sh | sh
+
+
+RUN echo 'export DENO_INSTALL="/root/.deno"' >> /root/.zshrc
+RUN echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >> /root/.zshrc
+
+RUN /root/.deno/bin/deno install --allow-read --allow-run --allow-write --allow-net -f --unstable https://deno.land/x/denon@v2.2.1/denon.ts
