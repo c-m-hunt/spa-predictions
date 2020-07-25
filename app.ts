@@ -70,7 +70,8 @@ const calculateTable = (data: PredictionData) => {
   for (const player of data.predictions) {
     const name = player.name;
     const weekPoints = calcualatePoints(player.predictions, data.actual);
-    const totalPoints = Object.values(weekPoints).reduce((a: number, b: number) => a + b, 0) +
+    const totalPoints =
+      Object.values(weekPoints).reduce((a: number, b: number) => a + b, 0) +
       player.currentPoints;
     leagueTable.push({
       name,
@@ -88,17 +89,23 @@ const calculateTable = (data: PredictionData) => {
 const displayWeeklyGamePoints = (
   gamePoints: { [key: string]: Points },
   games: string[],
-  predictionData: PredictionData
+  predictionData: PredictionData,
 ) => {
   const weekTable = new AsciiTable("Weekly Table");
   weekTable.setHeading("Game", "Current score", ...Object.keys(gamePoints));
   for (const game of games) {
-    const playerPoints = Object.values(gamePoints).map((p: {[key: string]: number}, i: number) => {
-      const pred = predictionData.predictions[i].predictions[game]
-      return `${pred.homeGoals}-${pred.awayGoals} ${pred.scorer} - ${p[game]}`;
-    });
+    const playerPoints = Object.values(gamePoints).map(
+      (p: { [key: string]: number }, i: number) => {
+        const pred = predictionData.predictions[i].predictions[game];
+        return `${pred.homeGoals}-${pred.awayGoals} ${pred.scorer} - ${
+          p[game]
+        }`;
+      },
+    );
     const actualGame = predictionData.actual[game];
-    const actualGameString = `${actualGame.homeGoals}-${actualGame.awayGoals} ${actualGame.scorers.join(",")}`
+    const actualGameString = `${actualGame.homeGoals}-${actualGame.awayGoals} ${
+      actualGame.scorers.join(",")
+    }`;
     weekTable.addRow(game, actualGameString, ...playerPoints);
   }
   console.log(weekTable.toString());
@@ -137,7 +144,7 @@ const showUpdatedData = () => {
   displayWeeklyGamePoints(
     points.gamePoints,
     Object.keys(predictionData.actual),
-    predictionData
+    predictionData,
   );
   displayLeagueTable(points.leagueTable, points.gamePoints);
 };
