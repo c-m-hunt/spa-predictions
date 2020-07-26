@@ -24,5 +24,8 @@
     ".vscode{,/**}"
   ],
   "appService.deploySubpath": "",
-  "deno.enable": true
+  "deno.enable": true,
+  "deno.alwaysShowStatus": true,
+  "deno.unstable": true,
+  "deno.tsconfig": "./tsconfig.json"
 }

@@ -1,15 +1,15 @@
 {
     "actual":{
-      "ARSvWAT":{"homeGoals":0,"awayGoals":0,"scorers":[]},
-      "BURvBRI":{"homeGoals":0,"awayGoals":0,"scorers":[]},
-      "CHEvWOL":{"homeGoals":0,"awayGoals":0,"scorers":[]},
-      "CRYvTOT":{"homeGoals":0,"awayGoals":0,"scorers":[]},
-      "EVEvBOU":{"homeGoals":0,"awayGoals":0,"scorers":[]},
-      "LEIvMAU":{"homeGoals":0,"awayGoals":0,"scorers":[]},
-      "MACvNOR":{"homeGoals":0,"awayGoals":0,"scorers":[]},
-      "NEWvLIV":{"homeGoals":0,"awayGoals":0,"scorers":[]},
-      "SOUvSHE":{"homeGoals":0,"awayGoals":0,"scorers":[]},
-      "WHUvAST":{"homeGoals":0,"awayGoals":0,"scorers":[]}
+      "ARSvWAT":{"homeGoals":3,"awayGoals":2,"scorers":["Aubamayang", "Tierney", "Deeney", "Welbeck"]},
+      "BURvBRI":{"homeGoals":1,"awayGoals":2,"scorers":["Bissouma", "Wood", "Connolly"]},
+      "CHEvWOL":{"homeGoals":2,"awayGoals":0,"scorers":["Mount", "Giroud"]},
+      "CRYvTOT":{"homeGoals":1,"awayGoals":1,"scorers":["Kane", "Schlupp"]},
+      "EVEvBOU":{"homeGoals":1,"awayGoals":3,"scorers":["King", "Kean", "Solanke", "Stanislas"]},
+      "LEIvMAU":{"homeGoals":0,"awayGoals":2,"scorers":["Hernandes", "Lingard"]},
+      "MACvNOR":{"homeGoals":5,"awayGoals":0,"scorers":["Jesus", "KDB", "Sterling", "Mahrez"]},
+      "NEWvLIV":{"homeGoals":1,"awayGoals":3,"scorers":["Gayle","Van Dijk", "Origi", "Mane"]},
+      "SOUvSHE":{"homeGoals":3,"awayGoals":1,"scorers":["Lundstrum", "Adams", "Ings"]},
+      "WHUvAST":{"homeGoals":1,"awayGoals":1,"scorers":["Grealish", "Yamolenko"]}
     },
     "predictions":[
       {
@@ -32,112 +32,112 @@
         "name":"Garry",
         "currentPoints":174,
         "predictions":{
-          "ARSvWAT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "BURvBRI":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CHEvWOL":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CRYvTOT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "EVEvBOU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "LEIvMAU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "MACvNOR":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "NEWvLIV":{"homeGoals":0,"awayGoals":0,"scorer":""},
+          "ARSvWAT":{"homeGoals":2,"awayGoals":0,"scorer":"Lacazette"},
+          "BURvBRI":{"homeGoals":1,"awayGoals":0,"scorer":"Wood"},
+          "CHEvWOL":{"homeGoals":1,"awayGoals":2,"scorer":"Jimenez"},
+          "CRYvTOT":{"homeGoals":2,"awayGoals":1,"scorer":"Son"},
+          "EVEvBOU":{"homeGoals":1,"awayGoals":2,"scorer":"Wilson"},
+          "LEIvMAU":{"homeGoals":3,"awayGoals":2,"scorer":"Vardy"},
+          "MACvNOR":{"homeGoals":5,"awayGoals":1,"scorer":"Mahrez"},
+          "NEWvLIV":{"homeGoals":1,"awayGoals":3,"scorer":"Mane"},
           "SOUvSHE":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "WHUvAST":{"homeGoals":0,"awayGoals":0,"scorer":""}
+          "WHUvAST":{"homeGoals":3,"awayGoals":2,"scorer":"Haller"}
         }
       },
       {
         "name":"Taff",
         "currentPoints":174,
         "predictions":{
-          "ARSvWAT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "BURvBRI":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CHEvWOL":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CRYvTOT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "EVEvBOU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "LEIvMAU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "MACvNOR":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "NEWvLIV":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "SOUvSHE":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "WHUvAST":{"homeGoals":0,"awayGoals":0,"scorer":""}
+          "ARSvWAT":{"homeGoals":3,"awayGoals":1,"scorer":"Aubamayang"},
+          "BURvBRI":{"homeGoals":1,"awayGoals":0,"scorer":"Rodriguez"},
+          "CHEvWOL":{"homeGoals":2,"awayGoals":1,"scorer":"Willian"},
+          "CRYvTOT":{"homeGoals":2,"awayGoals":1,"scorer":"Son"},
+          "EVEvBOU":{"homeGoals":2,"awayGoals":0,"scorer":"Richarlison"},
+          "LEIvMAU":{"homeGoals":2,"awayGoals":1,"scorer":"Vardy"},
+          "MACvNOR":{"homeGoals":3,"awayGoals":1,"scorer":"Sterling"},
+          "NEWvLIV":{"homeGoals":1,"awayGoals":2,"scorer":"Salah"},
+          "SOUvSHE":{"homeGoals":2,"awayGoals":1,"scorer":"Ings"},
+          "WHUvAST":{"homeGoals":2,"awayGoals":1,"scorer":"Antonio"}
         }
       },
       {
         "name":"Eddie",
         "currentPoints":170,
         "predictions":{
-          "ARSvWAT":{"homeGoals":0,"awayGoals":0,"scorer":""},
+          "ARSvWAT":{"homeGoals":3,"awayGoals":0,"scorer":"Aubamayang"},
           "BURvBRI":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CHEvWOL":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CRYvTOT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "EVEvBOU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "LEIvMAU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "MACvNOR":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "NEWvLIV":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "SOUvSHE":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "WHUvAST":{"homeGoals":0,"awayGoals":0,"scorer":""}
+          "CHEvWOL":{"homeGoals":1,"awayGoals":1,"scorer":"Willian"},
+          "CRYvTOT":{"homeGoals":0,"awayGoals":2,"scorer":"Kane"},
+          "EVEvBOU":{"homeGoals":1,"awayGoals":1,"scorer":"Calver-Lewin"},
+          "LEIvMAU":{"homeGoals":1,"awayGoals":2,"scorer":"Bruno"},
+          "MACvNOR":{"homeGoals":4,"awayGoals":0,"scorer":"Sterling"},
+          "NEWvLIV":{"homeGoals":0,"awayGoals":2,"scorer":"Salah"},
+          "SOUvSHE":{"homeGoals":2,"awayGoals":1,"scorer":"Ings"},
+          "WHUvAST":{"homeGoals":2,"awayGoals":0,"scorer":"Antonio"}
         }
       },
       {
         "name":"Joe",
         "currentPoints":164,
         "predictions":{
-          "ARSvWAT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "BURvBRI":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CHEvWOL":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CRYvTOT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "EVEvBOU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "LEIvMAU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "MACvNOR":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "NEWvLIV":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "SOUvSHE":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "WHUvAST":{"homeGoals":0,"awayGoals":0,"scorer":""}
+          "ARSvWAT":{"homeGoals":3,"awayGoals":1,"scorer":"Aubamayang"},
+          "BURvBRI":{"homeGoals":1,"awayGoals":0,"scorer":"Wood"},
+          "CHEvWOL":{"homeGoals":2,"awayGoals":1,"scorer":"Giroud"},
+          "CRYvTOT":{"homeGoals":0,"awayGoals":3,"scorer":"Kane"},
+          "EVEvBOU":{"homeGoals":2,"awayGoals":1,"scorer":"Richarlison"},
+          "LEIvMAU":{"homeGoals":2,"awayGoals":1,"scorer":"Vardy"},
+          "MACvNOR":{"homeGoals":5,"awayGoals":0,"scorer":"Sterling"},
+          "NEWvLIV":{"homeGoals":0,"awayGoals":3,"scorer":"Salah"},
+          "SOUvSHE":{"homeGoals":2,"awayGoals":2,"scorer":"Ings"},
+          "WHUvAST":{"homeGoals":2,"awayGoals":1,"scorer":"Antonio"}
         }
       },
       {
         "name":"Dobs",
         "currentPoints":150,
         "predictions":{
-          "ARSvWAT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "BURvBRI":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CHEvWOL":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CRYvTOT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "EVEvBOU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "LEIvMAU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "MACvNOR":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "NEWvLIV":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "SOUvSHE":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "WHUvAST":{"homeGoals":0,"awayGoals":0,"scorer":""}
+          "ARSvWAT":{"homeGoals":2,"awayGoals":0,"scorer":"Aubamayang"},
+          "BURvBRI":{"homeGoals":1,"awayGoals":1,"scorer":"Maupay"},
+          "CHEvWOL":{"homeGoals":2,"awayGoals":1,"scorer":"Willian"},
+          "CRYvTOT":{"homeGoals":0,"awayGoals":2,"scorer":"Kane"},
+          "EVEvBOU":{"homeGoals":2,"awayGoals":0,"scorer":"Calver-Lewin"},
+          "LEIvMAU":{"homeGoals":1,"awayGoals":2,"scorer":"Rashford"},
+          "MACvNOR":{"homeGoals":5,"awayGoals":0,"scorer":"Sterling"},
+          "NEWvLIV":{"homeGoals":0,"awayGoals":2,"scorer":"Mane"},
+          "SOUvSHE":{"homeGoals":2,"awayGoals":1,"scorer":"Ings"},
+          "WHUvAST":{"homeGoals":1,"awayGoals":2,"scorer":"Trezeguet"}
         }
       },
       {
         "name":"Scott",
         "currentPoints":146,
         "predictions":{
-          "ARSvWAT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "BURvBRI":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CHEvWOL":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CRYvTOT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "EVEvBOU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "LEIvMAU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "MACvNOR":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "NEWvLIV":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "SOUvSHE":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "WHUvAST":{"homeGoals":0,"awayGoals":0,"scorer":""}
+          "ARSvWAT":{"homeGoals":3,"awayGoals":1,"scorer":"Pepe"},
+          "BURvBRI":{"homeGoals":1,"awayGoals":1,"scorer":"Wood"},
+          "CHEvWOL":{"homeGoals":2,"awayGoals":1,"scorer":"Giroud"},
+          "CRYvTOT":{"homeGoals":1,"awayGoals":2,"scorer":"Kane"},
+          "EVEvBOU":{"homeGoals":2,"awayGoals":0,"scorer":"Richarlison"},
+          "LEIvMAU":{"homeGoals":1,"awayGoals":1,"scorer":"Perez"},
+          "MACvNOR":{"homeGoals":5,"awayGoals":0,"scorer":"KDB"},
+          "NEWvLIV":{"homeGoals":1,"awayGoals":2,"scorer":"Salah"},
+          "SOUvSHE":{"homeGoals":1,"awayGoals":1,"scorer":"McBurnie"},
+          "WHUvAST":{"homeGoals":2,"awayGoals":1,"scorer":"Soucek"}
         }
       },
       {
         "name":"Rob",
         "currentPoints":140,
         "predictions":{
-          "ARSvWAT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "BURvBRI":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CHEvWOL":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "CRYvTOT":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "EVEvBOU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "LEIvMAU":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "MACvNOR":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "NEWvLIV":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "SOUvSHE":{"homeGoals":0,"awayGoals":0,"scorer":""},
-          "WHUvAST":{"homeGoals":0,"awayGoals":0,"scorer":""}
+          "ARSvWAT":{"homeGoals":2,"awayGoals":0,"scorer":"Aubamayang"},
+          "BURvBRI":{"homeGoals":1,"awayGoals":0,"scorer":"Tarkowski"},
+          "CHEvWOL":{"homeGoals":2,"awayGoals":1,"scorer":"Pullisic"},
+          "CRYvTOT":{"homeGoals":0,"awayGoals":2,"scorer":"Kane"},
+          "EVEvBOU":{"homeGoals":1,"awayGoals":2,"scorer":"Wilson"},
+          "LEIvMAU":{"homeGoals":1,"awayGoals":1,"scorer":"Martial"},
+          "MACvNOR":{"homeGoals":5,"awayGoals":0,"scorer":"KDB"},
+          "NEWvLIV":{"homeGoals":0,"awayGoals":2,"scorer":"Salah"},
+          "SOUvSHE":{"homeGoals":1,"awayGoals":1,"scorer":"Ings"},
+          "WHUvAST":{"homeGoals":0,"awayGoals":2,"scorer":"Grealish"}
         }
       }
     ]

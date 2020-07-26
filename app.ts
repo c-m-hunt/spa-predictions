@@ -17,7 +17,7 @@ interface Points {
   [key: string]: number;
 }
 
-const getResult = (homeGoals: number, awayGoals: number): Result => {
+export const getResult = (homeGoals: number, awayGoals: number): Result => {
   if (homeGoals > awayGoals) {
     return "H";
   }
@@ -108,7 +108,7 @@ const displayWeeklyGamePoints = (
     }`;
     weekTable.addRow(game, actualGameString, ...playerPoints);
   }
-  console.log(weekTable.toString());
+  return weekTable.toString();
 };
 
 const displayLeagueTable = (
@@ -122,7 +122,8 @@ const displayLeagueTable = (
   const leagueTable = new AsciiTable("League Table");
 
   leagueTable
-    .setHeading("Pos", "Name", "Week points", "Total points")
+    .setHeading("Pos", "Name", "Week", "Total")
+    .setAlign(0, AsciiAlign.LEFT)
     .setAlign(2, AsciiAlign.RIGHT)
     .setAlign(3, AsciiAlign.RIGHT);
   for (const pos in sortedPoints) {
@@ -134,43 +135,27 @@ const displayLeagueTable = (
     const posNo = parseInt(pos) + 1;
     leagueTable.addRow(posNo, row["name"], `${weekPoints}`, row["points"]);
   }
-  console.log(leagueTable.toString());
+  return leagueTable.toString();
 };
 
-const showUpdatedData = () => {
+export const getTables = () => {
   const predictionData = getData();
   const points = calculateTable(predictionData);
 
-  displayWeeklyGamePoints(
+  const weeklyTable = displayWeeklyGamePoints(
     points.gamePoints,
     Object.keys(predictionData.actual),
     predictionData,
   );
-  displayLeagueTable(points.leagueTable, points.gamePoints);
+  const leagueTable = displayLeagueTable(points.leagueTable, points.gamePoints);
+  return {
+    weeklyTable, leagueTable
+  }
 };
 
-const appendLeadingZeroes = (n: number): string => {
+export const appendLeadingZeroes = (n: number): string => {
   if (n <= 9) {
     return "0" + n;
   }
   return n.toString();
 };
-
-showUpdatedData();
-
-const watcher = Deno.watchFs("./data.json");
-for await (const event of watcher) {
-  if (event.kind === "modify") {
-    const now = new Date();
-    const formattedTime = `${appendLeadingZeroes(now.getHours())}:${
-      appendLeadingZeroes(now.getMinutes())
-    }:${appendLeadingZeroes(now.getSeconds())}`;
-    const formattedDate = `${appendLeadingZeroes(now.getFullYear())}-${
-      appendLeadingZeroes(now.getMonth() + 1)
-    }-${appendLeadingZeroes(now.getDate())}`;
-    console.log("--------------------------------------");
-    console.log(`UPDATED AT ${formattedTime} on ${formattedDate}`);
-    console.log("--------------------------------------");
-    showUpdatedData();
-  }
-}
